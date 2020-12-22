@@ -1,0 +1,73 @@
+@import '../config.scss';
+
+.hero {
+	width: 100%;
+	min-height: 100vh;
+
+	background-image: url("../img/hero__background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	color: #fff;
+
+	display: flex;
+	flex-direction: column;
+
+	&__background {
+		width: 100%;
+
+		background-color: rgba( 0, 0, 0, 0.7);
+
+		flex: 1 0 auto;
+
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__wrap {
+		height: 100%;
+
+		flex: 1 0 auto;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	&__inner {
+		width: 100%;
+		max-width: 1200px;
+		
+		margin: 0 auto;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		padding: 25px 0 0;
+
+		overflow: hidden;
+	}
+
+	.hero__heading {
+		font-size: 52rem;
+
+		margin: 0 0 23px;
+	}
+
+	.hero__text {
+		flex: 1 1 auto;
+		
+		font-size: 20rem;
+		
+		margin: 0 0 123px;
+	}
+
+	.hero__button {
+	}
+
+
+	@media (max-width: $md) {
+		background-color: #000;
+	}
+}
