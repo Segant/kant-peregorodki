@@ -1,0 +1,40 @@
+@import '../config.scss';
+
+.garants {
+	padding: 136px 0 119px;
+}
+
+.garants__heading {}
+
+.garants__content {
+	margin: 88px -32px 0;
+
+	display: flex;
+}
+
+.garants__left {
+	padding: 0 32px;
+
+	flex: 0 0 50%;
+}
+
+.garants__quality {
+	margin: 0 0 64px;
+}
+
+.garants__price {
+	background-color: #000;
+
+	color: #fff;
+}
+
+.garants__right {
+	padding: 0 32px;
+	
+	flex: 0 0 50%;
+
+	display: flex;
+}
+
+.garants__service {
+}

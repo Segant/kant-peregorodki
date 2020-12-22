@@ -1,0 +1,63 @@
+.gallery {
+	margin: 92px 0 0;
+
+	&__main {
+		height: 1440px;
+	}
+
+	&__image {
+		height: 100%;
+
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	&__image1 {
+		background-image: url("../img/loft-1 (1).jpg");
+	}
+
+	&__image2 {
+		background-image: url("../img/loft-1.jpg");
+	}
+
+	&__image3 {
+		background-image: url("../img/peregorodka-loft.jpg");
+	}
+
+	&__image4 {
+		background-image: url("../img/inter-business.jpg");
+	}
+
+	&__image5 {
+		background-image: url("../img/659832444_loft-peregorodka-s.jpg");
+	}
+
+	&__content {}
+
+	&__item {
+		color: #fff;
+		overflow: hidden;
+		height: 100%;
+
+		&-center {
+			background-color: #000;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	&__body {}
+
+	&__text {
+		max-width: 262px;
+
+		margin: 0 0 72px;
+
+		text-align: center;
+	}
+
+	&__button {}
+}
