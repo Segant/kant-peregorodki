@@ -1,15 +1,18 @@
 @import '../config';
 
 .container {
-	max-width: 1200px;
+	max-width: 1264px;
 	width: 100%;
+	height: 100%;
+
+	padding: 0 32px;
 
 	margin: 0 auto;
 
 	overflow: hidden;
 
 	&-large {
-		max-width: 1856px;
+		max-width: 1920px;
 	}
 }
 
@@ -45,20 +48,32 @@ html {
 	font-size: 1px;
 
 	@media (max-width: $xl) {
-		font-size: 0.85px;
+		font-size: 0.95px;
 	}
 
 	@media (max-width: $lg) {
-		font-size: 0.7px;
+		font-size: 0.9px;
 	}
 
 	@media (max-width: $md) {
-		font-size: 0.55px;
+		font-size: 0.85px;
 	}
 }
 
 body {
 	position: relative;
+}
+
+.animation {
+	transition: 0.5s all;
+
+	&:hover {
+		transition: 0.5s all;
+	}
+
+	&:after, &:before {
+		transition: 0.5s all;
+	}
 }
 
 .button {
@@ -78,11 +93,30 @@ body {
 	}
 }
 
-.animation {
-	transition: 0.5s all;
+.linkhover {
+	position: relative;
 
-	& :hover {
-		transition: 0.5s all;
+	&:after {
+		position: absolute;
+
+		content: "";
+
+		width: 0;
+		height: 2px;
+
+		bottom: -2px;
+		left: 50%;
+
+		transform: translateX(-50%);
+
+		background-color: #fff;
+	}
+
+	&:hover {
+
+		&:after {
+			width: 100%;
+		}
 	}
 }
 
@@ -117,55 +151,6 @@ body {
 
 .text {
 	font-size: 20rem;
-}
-
-.header {
-	position: fixed;
-	
-	width: 100%;
-
-	padding: 32px 0;
-
-	color: #fff;
-
-	&__nav {
-		width: 100%;
-		max-width: 1830px;
-		margin: 0 auto;
-
-		flex: 0 0 64px;
-
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-
-	&__logo {
-
-	}
-
-	&__link {
-
-	}
-
-	&__image {
-
-	}
-
-	&__ul {
-		display: flex;
-		justify-content: space-between;
-
-		font-size: 18rem;
-	}
-
-	&__li {
-		padding: 0 19px;
-	}
-
-	&__phone {
-		font-size: 40rem;
-	}
 }
 
 .heading {
