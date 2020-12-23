@@ -1,0 +1,113 @@
+/*$xs: 0;
+$md: 768px;
+$lg: 1024px;
+$xl: 1200px;
+
+$xxl: 1350px;*/
+@import "../config";
+
+.advantadges {
+	background-color: #000;
+
+	color: #fff;
+
+	padding: 128px 0;
+
+	&__wrapper {}
+
+	&__heading {
+		color: #fff;
+
+		&:after, &:before {
+			background-color: #fff;
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+
+		margin: 98px -32px 0;
+	}
+
+	&__item {
+		padding: 32px;
+
+		flex: 0 0 50%;
+
+		@media (max-width: $lg) {
+			flex: 0 0 100%;
+		}
+	}
+
+	&__item--inner {
+		min-height: 320px;
+
+		width: 100%;
+		max-width: 568px;
+
+		margin: 0 auto;
+
+		padding: 16px;
+
+		border-radius: 6px;
+		border: 1px solid #fff;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__body {
+		max-width: 365px;
+		width: 100%;
+
+		min-height: 190px;
+
+		text-align: center;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&__logo {
+		width: 115px;
+		height: auto;
+
+		margin: 0 auto 20px;
+	}
+
+	&__text {}
+
+	&__item-dark {
+		color: #000;
+
+		& .advantadges__item--inner {
+			background-color: #fff;
+		}
+	}
+
+	&__item-text {
+
+		& .advantadges__item--inner {
+			display: block;
+
+			border: none;
+		}
+
+		& .advantadges__body {
+			width: 100%;
+		}
+
+		& .advantadges__heading {
+			text-align: left;
+
+			margin: 0 0 38px;
+		}
+
+		& .advantadges__text {
+			text-align: justify;
+		}
+	}
+}
