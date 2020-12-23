@@ -1,0 +1,26 @@
+@import "../config";
+
+.photos {
+
+	&__wrapper {}
+
+	&__title {}
+	
+	&__text {
+		text-align: justify;
+
+		margin: 87px 0 93px;
+
+		@media (max-width: $xl) {
+			margin: 70px 0 70px;
+		}
+
+		@media (max-width: $lg) {
+			margin: 53px 0 46px;
+		}
+
+		@media (max-width: $md) {
+			margin: 39px 0 29px;
+		}
+	}
+}

@@ -1,4 +1,4 @@
-window.onload = () => {
+$( document ).ready( () => {
 
 	//Menu transforming in scrool
 
@@ -12,15 +12,15 @@ window.onload = () => {
 		}
 	}
 
-	$(window).scroll( () => {
+	$(window).scroll( function() {
 		navScroll();
 	});
 
 	//Burger
 
-	$("#burger").click( () => {
+	$("#burger").click( function() {
 		$("#burger").toggleClass("header__burger-active");
 		$("#nav").toggleClass("header__menu-active");
 	});
 
-};
+});

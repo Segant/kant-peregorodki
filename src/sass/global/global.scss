@@ -14,6 +14,17 @@
 	&-large {
 		max-width: 1920px;
 	}
+
+	.container-lg {
+		width: 100%;
+		max-width: 1920px;
+
+		margin: 0 auto;
+
+		overflow: hidden;
+
+		padding: 0 32px;
+	}
 }
 
 ul {
@@ -150,7 +161,7 @@ body {
 }
 
 .text {
-	font-size: 20rem;
+	font-size: 20px;
 }
 
 .heading {
@@ -160,13 +171,17 @@ body {
 	margin: 0 auto;
 
 	color: #000;
-	font-size: 40rem;
+	font-size: 40px;
 	font-weight: 700;
 
 	text-align: center;
 
 	&:after, &:before {
 		background-color: #000;
+	}
+
+	@media (max-width: $md) {
+		max-width: 300px;
 	}
 }
 
@@ -198,15 +213,15 @@ body {
 	}
 }
 
-.panorama {
+.grid {
 
-	&__row {
+	&-row {
 		height: 100%;
 
 		display: flex;
 	}
 
-	&__column {
+	&-column {
 		height: 100%;
 
 		display: flex;
@@ -214,15 +229,23 @@ body {
 	}
 
 	&__col2 {
-		flex: 0 0 33.33%;
-	}
-
-	&__col3 {
-		flex: 0 0 50%;
+		flex: 0 0 25%;
 	}
 
 	&__col4 {
+		flex: 0 0 33.33%;
+	}
+
+	&__col6 {
+		flex: 0 0 50%;
+	}
+
+	&__col8 {
 		flex: 0 0 66.66%;
+	}
+
+	&__col10 {
+		flex: 0 0 75%;
 	}
 
 	&__image {
