@@ -35,9 +35,11 @@
 
 		padding: 25px 0 0;
 
-		margin: 406px 0 128px;
-
 		overflow: hidden;
+
+		@media (max-width: $md) {
+			margin: 406px 0 128px;
+		}
 	}
 
 	.hero__heading {
