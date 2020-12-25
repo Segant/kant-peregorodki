@@ -2321,6 +2321,12 @@ $xxl: 1350px;*/
        object-fit: cover;
     border-radius: 6px;
     overflow: hidden; }
+  @media (max-width: 1200px) {
+    .details--text__image {
+      padding: 0 0 16px; } }
+  @media (max-width: 1200px) {
+    .details--text__image {
+      padding: 0; } }
 
 .footer {
   background: #000;

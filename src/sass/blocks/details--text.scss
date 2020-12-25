@@ -105,6 +105,14 @@
 
 		overflow: hidden;
 	}
+
+	@media (max-width: $xl) {
+		padding: 0 0 16px;
+	}
+
+	@media (max-width: $xl) {
+		padding: 0;
+	}
 }
 
 .details--text__bot {
