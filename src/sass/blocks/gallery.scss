@@ -20,6 +20,7 @@
 
 	&__image {
 		width: 100%;
+		height: 100%;
 	}
 
 	&__left {
@@ -82,6 +83,10 @@
 			margin: 46px 0 0;
 		}
 
+		.gallery--item__wrapper {
+			height: 100%;
+		}
+
 		@media (max-width: $md) {
 			flex: 0 0 100%;
 		}
@@ -103,6 +108,10 @@
 
 	&--row__container {
 		margin: -32px;
+
+		@media (max-width: $xl) {
+			margin: -16px;
+		}
 	}
 
 	&--row__item {
@@ -110,6 +119,10 @@
 
 		border-radius: 6px;
 		overflow: hidden;
+
+		@media (max-width: $xl) {
+			padding: 16px;
+		}
 	}
 
 	&--interactive {

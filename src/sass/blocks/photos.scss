@@ -42,7 +42,7 @@
 		&--row {
 			margin: -32px;
 
-			@media (max-width: $lg) {
+			@media (max-width: $xl) {
 				margin: -16px;
 			}
 		}
@@ -58,7 +58,7 @@
 
 			padding: 32px;
 
-			@media (max-width: $lg) {
+			@media (max-width: $xl) {
 				padding: 16px;
 			}
 		}
@@ -97,7 +97,7 @@
 
 			padding: 32px 0 0;
 
-			@media (max-width: $lg) {
+			@media (max-width: $xl) {
 				padding: 16px 0 0;
 			}
 		}

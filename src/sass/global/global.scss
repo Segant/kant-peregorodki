@@ -263,8 +263,16 @@ body {
 .padding {
 	margin: -32px;
 
+	@media (max-width: $xl) {
+		margin: -16px;
+	}
+
 	&__item {
 		padding: 32px;
+
+		@media (max-width: $xl) {
+			padding: 16px;
+		}
 	}
 }
 

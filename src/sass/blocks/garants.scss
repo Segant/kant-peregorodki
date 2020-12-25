@@ -37,6 +37,10 @@
 
 	flex: 0 0 50%;
 
+	@media (max-width: $xl) {
+		padding: 0 16px;
+	}
+
 	@media (max-width: $lg) {
 		flex: 0 0 100%;
 	}
@@ -45,7 +49,7 @@
 .garants__quality {
 	margin: 0 auto 64px;
 
-	@media (max-width: $lg) {
+	@media (max-width: $xl) {
 		margin: 0 auto 32px;
 	}
 }
@@ -63,10 +67,14 @@
 
 	display: flex;
 
+	@media (max-width: $xl) {
+			padding: 0 16px;
+	}
+
 	@media (max-width: $lg) {
 		flex: 0 0 100%;
 
-		padding: 32px 32px 0;
+		padding: 32px 16px 0;
 	}
 }
 
