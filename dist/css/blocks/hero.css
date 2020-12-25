@@ -50,6 +50,9 @@
   .hero .hero__heading {
     font-size: 52rem;
     margin: 0 0 23px; }
+    @media (max-width: 768px) {
+      .hero .hero__heading {
+        font-size: 42rem; } }
   .hero .hero__text {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;

@@ -55,6 +55,11 @@
 			flex: 0 0 100%;
 			padding: 16px 32px;
 		}
+
+		@media (max-width: $md) {
+			flex: 0 0 100%;
+			padding: 16px;
+		}
 	}
 
 	&--main__text {
@@ -121,6 +126,11 @@
 			flex: 0 0 100%;
 			padding: 16px 32px;
 		}
+
+		@media (max-width: $md) {
+			flex: 0 0 100%;
+			padding: 0 16px;
+		}
 	}
 
 	&--sub {
@@ -167,6 +177,10 @@
 
 			justify-content: center;
 		}
+
+		@media (max-width: $md) {
+			padding: 16px 32px;
+		}
 	}
 
 	&--sub__image {
@@ -198,6 +212,10 @@
 
 			display: flex;
 			justify-content: center;
+		}
+
+		@media (max-width: $md) {
+			padding: 16px 32px;
 		}
 	}
 

@@ -59,6 +59,12 @@
 
 		display: flex;
 		flex-direction: column;
+
+		@media (max-width: $md) {
+			padding: 16px;
+
+			min-height: 0;
+		}
 	}
 
 	&__title {
@@ -68,6 +74,10 @@
 		text-align: center;
 
 		margin: 0 0 25px;
+
+		@media (max-width: $md) {
+			font-size: 24px;
+		}
 	}
 
 	&__input {
@@ -192,6 +202,10 @@
 		text-align: center;
 
 		min-height: 200px;
+
+		@media (max-width: $md) {
+			min-height: 0;
+		}
 	}
 
 	&__cart--whatsapp {

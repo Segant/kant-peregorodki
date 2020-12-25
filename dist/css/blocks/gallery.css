@@ -129,6 +129,7 @@
       border-radius: 6px;
       overflow: hidden;
       background-color: #000;
+      text-align: center;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -140,7 +141,7 @@
               align-items: center; }
       @media (max-width: 768px) {
         .gallery--interactive__wrapper {
-          padding: 64px; } }
+          padding: 32px; } }
     .gallery--interactive__body {
       width: 100%;
       max-width: 280px; }

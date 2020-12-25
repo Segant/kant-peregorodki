@@ -11,6 +11,10 @@
 
 	overflow: hidden;
 
+	@media (max-width: $md) {
+		padding: 0 16px;
+	}
+
 	&-large {
 		max-width: 1920px;
 	}
@@ -24,6 +28,10 @@
 		overflow: hidden;
 
 		padding: 0 32px;
+
+		@media  (max-width: $md) {
+			padding: 0 16px;
+		}
 	}
 }
 
@@ -106,6 +114,8 @@ body {
 	}
 
 	@media (max-width: $md) {
+		padding: 15.2px 15px 17px;
+
 		font-size: 17px;
 	}
 }
@@ -203,6 +213,8 @@ body {
 	max-width: 568px;
 
 	margin: 0 auto;
+
+	padding: 0 16px;
 
 	border-radius: 6px;
 	border: 1px solid #000;
@@ -370,6 +382,10 @@ body {
 
 			background-image: linear-gradient(to top, rgba( 0, 0, 0, 0.7) 0%, rgba( 0, 0, 0, 0.6) 99px, rgba( 0, 0, 0, 0) 169px);
 		}
+
+		@media (max-width: $md) {
+			padding: 14px;
+		}
 	}
 
 	&__body {}
@@ -419,6 +435,8 @@ body {
 		}
 
 		@media (max-width: $lg) {
+			margin: 0;
+
 			position: absolute;
 
 			top: 0;

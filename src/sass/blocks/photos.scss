@@ -169,9 +169,15 @@
 
 				padding: 110px 16px;
 
+				text-align: center;
+
 				display: flex;
 				justify-content: center;
 				align-items: center;
+
+				@media (max-width: $md) {
+					padding: 32px;
+				}
 			}
 
 			&__body {

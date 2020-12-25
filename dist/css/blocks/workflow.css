@@ -47,11 +47,18 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
+    @media (max-width: 768px) {
+      .workflow__item {
+        padding: 16px;
+        min-height: 0; } }
   .workflow__title {
     font-size: 28px;
     font-weight: 700;
     text-align: center;
     margin: 0 0 25px; }
+    @media (max-width: 768px) {
+      .workflow__title {
+        font-size: 24px; } }
   .workflow__input {
     margin: 0 0 21px;
     width: 100%;
@@ -135,6 +142,9 @@
     margin: 0 0 30px;
     text-align: center;
     min-height: 200px; }
+    @media (max-width: 768px) {
+      .workflow__text {
+        min-height: 0; } }
   .workflow__cart--whatsapp .workflow__item {
     border-color: #00bfa5; }
   .workflow__cart--whatsapp .workflow__title {

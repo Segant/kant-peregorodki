@@ -144,12 +144,14 @@
 
 			background-color: #000;
 
+			text-align: center;
+
 			display: flex;
 			justify-content: center;
 			align-items: center;
 
 			@media (max-width: $md) {
-				padding: 64px;
+				padding: 32px;
 			}
 		}
 
