@@ -1,0 +1,147 @@
+.workflow {
+  color: #000;
+  padding: 128px 0; }
+  @media (max-width: 1024px) {
+    .workflow {
+      padding: 98px 0; } }
+  @media (max-width: 768px) {
+    .workflow {
+      padding: 64px 0; } }
+  .workflow__subheading {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin: 87px 0 58px; }
+  .workflow__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .workflow__cart {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33%;
+            flex: 0 0 33.33%; }
+    @media (max-width: 1200px) {
+      .workflow__cart {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 50%;
+                flex: 0 0 50%; } }
+    @media (max-width: 1024px) {
+      .workflow__cart {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%; } }
+  .workflow__item {
+    border-radius: 6px;
+    border: 1px solid #999999;
+    width: 100%;
+    max-width: 416px;
+    min-height: 651px;
+    margin: 0 auto;
+    padding: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .workflow__title {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 25px; }
+  .workflow__input {
+    margin: 0 0 21px;
+    width: 100%;
+    color: #000;
+    font-size: 20px;
+    padding: 16.3px 25px;
+    border-radius: 6px;
+    border: 1px solid #999; }
+    .workflow__input:focus {
+      border-color: #000; }
+  .workflow__textbox {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    width: 100%;
+    min-height: 120px;
+    margin: 0 0 16px;
+    resize: none;
+    color: #000;
+    font-size: 20px;
+    padding: 16.3px 25px;
+    border-radius: 6px;
+    border: 1px solid #999; }
+    .workflow__textbox:focus {
+      border-color: #000; }
+  .workflow__radio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 0 9px; }
+    .workflow__radio input {
+      width: 20px;
+      height: 20px;
+      margin: 0 11px 0 0; }
+    .workflow__radio p {
+      color: #000;
+      font-size: 11px;
+      font-weight: 400;
+      text-align: left; }
+    .workflow__radio a {
+      color: #000;
+      text-decoration: underline; }
+  .workflow__brandcrowns {
+    margin: 0 0 16px;
+    color: #999;
+    font-size: 10px;
+    font-weight: 400;
+    text-align: justify; }
+  .workflow__button {
+    width: 100%;
+    text-align: center;
+    border-color: #000;
+    background-color: #000;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff; }
+    .workflow__button:hover {
+      background-color: #fff;
+      color: #000; }
+  .workflow__icon {
+    margin: 0 0 48px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .workflow__icon img {
+      width: 120px;
+      height: auto; }
+  .workflow__text {
+    margin: 0 0 30px;
+    text-align: center;
+    min-height: 200px; }
+  .workflow__cart--whatsapp .workflow__item {
+    border-color: #00bfa5; }
+  .workflow__cart--whatsapp .workflow__title {
+    color: #00bfa5; }
+  .workflow__cart--whatsapp .workflow__button {
+    border-color: #00bfa5;
+    background-color: #00bfa5; }
+    .workflow__cart--whatsapp .workflow__button:hover {
+      background-color: #fff;
+      color: #000; }
