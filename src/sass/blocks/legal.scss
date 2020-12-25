@@ -1,0 +1,61 @@
+@import '../config';
+
+.legal {
+	padding: 128px 0 161px;
+
+	color: #000;
+
+	text-align: left;
+
+	@media (max-width: $lg) {
+		padding: 63px 0 128px;
+	}
+}
+
+.legal__wrapper {}
+
+.legal__text {
+	margin: 84px 0 38px;
+
+	font-size: 24px;
+	font-weight: 700;
+
+	@media (max-width: $lg) {
+		margin: 38px 0;
+	}
+}
+
+.legal__table {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.legal__left, .legal__right {
+	flex: 0 0 50%;
+
+	li {
+		display: flex;
+
+		margin: 0 0 13px;
+	}
+
+	@media (max-width: $lg) {
+		flex: 0 0 100%;
+	}
+}
+
+.legal__name {
+	width: 100%;
+	max-width: 125px;
+	font-family: "Formular - Light";
+
+	@media (max-width: $md) {
+		max-width: 105px;
+	}
+}
+
+.legal__value {
+	font-family: "Formular - Bold";
+	font-weight: 700;
+}

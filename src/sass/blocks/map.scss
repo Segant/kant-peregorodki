@@ -1,0 +1,147 @@
+@import '../config';
+
+.map {
+	background-image: url('../img/1apartment-n°four-novono-nora-von-nordenskjoeld-img_a4b1478006112cc4_14-5448-1-1f523a1.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.map__wrapper {
+	background-color: rgba( 0, 0, 0, 0.7);
+
+	.container {
+		min-height: 100vh;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		padding: 99px 0 100px;
+	}
+}
+
+.map__body {
+	width: 100%;
+	max-width: 1141px;
+
+	display: flex;
+
+	@media (max-width: $xxl) {
+		flex-wrap: wrap;
+	}
+}
+
+.map__logo {
+	display: none;
+
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+
+	@media (max-width: $xl) {
+		display: block;
+		flex: 0 0 100%;
+	}
+}
+
+.map__image {
+	flex: 0 0 568px;
+
+	img {
+		max-width: 568px;
+		width: 100%;
+
+		display: block;
+		margin: 0 auto;
+	}
+
+	@media (max-width: $xl) {
+		flex: 0 0 100%;
+	}
+}
+
+.map__content {
+	flex: 0 0 568px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	@media (max-width: $xl) {
+		flex: 0 1 100%;
+	}
+}
+
+.map__title {
+	color: #fff;
+	font-size: 52px;
+	text-align: left;
+
+	margin: 0 0 25px;
+
+	@media (max-width: $s) {
+		font-size: 40px;
+	}
+}
+
+.map__text {
+	color: #fff;
+	text-align: left;
+
+	margin: 0 0 50px;
+}
+
+.map__buttons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	@media (max-width: $md) {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.map__button {
+	min-width: 204px;
+
+	text-align: center;
+
+	margin: 0 33px 33px 0;
+
+	&:after, &:before {
+		display: none;
+	}
+
+	@media (max-width: $md) {
+		margin: 0 90px 33px;
+
+		&:after, &:before {
+			display: block;
+		}
+	}
+
+	@media (max-width: $s) {
+		margin: 0 auto 33px;
+	}
+}
+
+.map__button_whatsapp {
+	border-color: #00bfa5;
+	background-color: #00bfa5;
+
+	text-align: right;
+
+	background-image: url("../../img/ico-whatsapp_copy_2.png");
+	background-repeat: no-repeat;
+	background-position: 18px center;
+
+	color: #fff;
+
+	&:hover {
+		background-color: transparent;
+
+		color: #fff;
+	}
+}

@@ -1,0 +1,52 @@
+.legal {
+  padding: 128px 0 161px;
+  color: #000;
+  text-align: left; }
+  @media (max-width: 1024px) {
+    .legal {
+      padding: 63px 0 128px; } }
+
+.legal__text {
+  margin: 84px 0 38px;
+  font-size: 24px;
+  font-weight: 700; }
+  @media (max-width: 1024px) {
+    .legal__text {
+      margin: 38px 0; } }
+
+.legal__table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.legal__left, .legal__right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%; }
+  .legal__left li, .legal__right li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 0 13px; }
+  @media (max-width: 1024px) {
+    .legal__left, .legal__right {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%; } }
+
+.legal__name {
+  width: 100%;
+  max-width: 125px;
+  font-family: "Formular - Light"; }
+  @media (max-width: 768px) {
+    .legal__name {
+      max-width: 105px; } }
+
+.legal__value {
+  font-family: "Formular - Bold";
+  font-weight: 700; }

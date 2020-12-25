@@ -131,7 +131,8 @@ body {
     background-color: #000; }
   @media (max-width: 768px) {
     .heading {
-      max-width: 300px; } }
+      max-width: 300px;
+      font-size: 30px; } }
 
 .cart {
   width: 100%;
