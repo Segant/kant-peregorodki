@@ -3,6 +3,8 @@
 .legal {
 	padding: 128px 0 161px;
 
+	
+
 	color: #000;
 
 	text-align: left;
@@ -48,7 +50,6 @@
 .legal__name {
 	width: 100%;
 	max-width: 125px;
-	font-family: "Formular - Light";
 
 	@media (max-width: $md) {
 		max-width: 105px;
@@ -56,6 +57,5 @@
 }
 
 .legal__value {
-	font-family: "Formular - Bold";
 	font-weight: 700;
 }

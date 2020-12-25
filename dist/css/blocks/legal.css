@@ -41,12 +41,10 @@
 
 .legal__name {
   width: 100%;
-  max-width: 125px;
-  font-family: "Formular - Light"; }
+  max-width: 125px; }
   @media (max-width: 768px) {
     .legal__name {
       max-width: 105px; } }
 
 .legal__value {
-  font-family: "Formular - Bold";
   font-weight: 700; }
