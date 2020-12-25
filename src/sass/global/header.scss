@@ -75,7 +75,7 @@
 
 				width: 100%;
 
-				height: 100vh;
+				height: calc(100vh - 96px);
 				overflow: auto;
 
 				padding: 0 32px;
@@ -98,12 +98,14 @@
 					}
 				}
 			}
+		}
 
-			@media (max-width: $lg) {
+		@media (max-width: $lg) {
 
-				&-active {
-					padding: 0 16px;
-				}
+			height: calc(100vh - 48px);
+
+			&-active {
+				padding: 0 16px;
 			}
 		}
 	}
