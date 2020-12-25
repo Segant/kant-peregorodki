@@ -59,6 +59,9 @@ html {
 body {
   position: relative; }
 
+.overflow-hidden {
+  overflow: hidden; }
+
 .animation {
   -webkit-transition: 0.5s all;
   transition: 0.5s all; }

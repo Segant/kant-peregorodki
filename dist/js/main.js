@@ -4,6 +4,8 @@ $( document ).ready( () => {
 
 	navScroll();
 
+	// aad  some code 
+
 	function navScroll() {
 		if ( $(window).scrollTop() == 0) {
 			$("#header").removeClass( "header-scroll" );
@@ -17,10 +19,12 @@ $( document ).ready( () => {
 	});
 
 	//Burger
+	
 
 	$("#burger").click( function() {
 		$("#burger").toggleClass("header__burger-active");
 		$("#nav").toggleClass("header__menu-active");
+		$('body').toggleClass('overflow-hidden');
 	});
 
 });
