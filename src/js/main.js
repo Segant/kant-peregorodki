@@ -19,10 +19,12 @@ $( document ).ready( () => {
 	});
 
 	//Burger
+	
 
 	$("#burger").click( function() {
 		$("#burger").toggleClass("header__burger-active");
 		$("#nav").toggleClass("header__menu-active");
+		$('body').toggleClass('overflow-hidden');
 	});
 
 });
