@@ -579,7 +579,7 @@ body {
         font-size: 22px;
         padding: 0; }
         .header__phone a {
-          padding: 21px 14px 21px 32px; } }
+          padding: 0 16px 0 16px; } }
   .header__span {
     position: relative; }
     .header__span:after, .header__span:before {
@@ -601,6 +601,9 @@ body {
     @media (max-width: 1200px) {
       .header__wrapper {
         display: block; } }
+    @media (max-width: 768px) {
+      .header__wrapper {
+        padding: 8px; } }
   .header__burger {
     width: 32px;
     height: 32px;

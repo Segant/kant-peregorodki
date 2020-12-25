@@ -163,7 +163,7 @@
 			padding: 0;
 			
 			& a {
-				padding: 21px 14px 21px 32px;
+				padding: 0 16px 0 16px;
 			}
 		}
 	}
@@ -204,6 +204,10 @@
 
 		@media (max-width: $xl) {
 			display: block;
+		}
+
+		@media (max-width: $md) {
+			padding: 8px;
 		}
 	}
 
