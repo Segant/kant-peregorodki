@@ -127,6 +127,18 @@
 
 	&--sub {
 		margin: 62px 0 126px;
+
+		@media (max-width: $xl) {
+			margin: 32px 0 101px;
+		}
+
+		@media (max-width: $lg) {
+			margin: 32px 0 81px;
+		}
+
+		@media (max-width: $md) {
+			margin: 32px 0 61px;
+		}
 	}
 
 	&--sub__wrapper {

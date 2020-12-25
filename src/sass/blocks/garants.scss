@@ -2,6 +2,14 @@
 
 .garants {
 	padding: 136px 0 119px;
+
+	@media (max-width: $xl) {
+		padding: 85px 0 60px;
+	}
+
+	@media (max-width: $md) {
+		padding: 63px 0 0;
+	}
 }
 
 .garants__heading {}
@@ -10,16 +18,36 @@
 	margin: 88px -32px 0;
 
 	display: flex;
+
+	@media (max-width: $xl) {
+		margin: 64px -32px 0;
+	}
+
+	@media (max-width: $lg) {
+		flex-wrap: wrap;
+	}
+
+	@media (max-width: $md) {
+		margin: 40px -32px 0;
+	}
 }
 
 .garants__left {
 	padding: 0 32px;
 
 	flex: 0 0 50%;
+
+	@media (max-width: $lg) {
+		flex: 0 0 100%;
+	}
 }
 
 .garants__quality {
-	margin: 0 0 64px;
+	margin: 0 auto 64px;
+
+	@media (max-width: $lg) {
+		margin: 0 auto 32px;
+	}
 }
 
 .garants__price {
@@ -34,7 +62,17 @@
 	flex: 0 0 50%;
 
 	display: flex;
+
+	@media (max-width: $lg) {
+		flex: 0 0 100%;
+
+		padding: 32px 32px 0;
+	}
 }
 
 .garants__service {
+
+	.cart__content {
+		padding: 52px 0;
+	}
 }

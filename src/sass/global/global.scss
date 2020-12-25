@@ -190,6 +190,10 @@ body {
 .cart {
 	width: 100%;
 
+	max-width: 568px;
+
+	margin: 0 auto;
+
 	border-radius: 6px;
 	border: 1px solid #000;
 
@@ -307,4 +311,18 @@ body {
 	&__button {
 
 	}
+}
+
+.layout {
+	position: relative;
+
+	.layout__wrapper {
+		position: absolute;
+	}
+
+	.layout__body {}
+	.layout__content {}
+	.layout__title {}
+	.layout__text {}
+	.layout__button {}
 }

@@ -1,6 +1,19 @@
-@import "../config";
+@import '../config';
 
 .photos {
+	margin: 256px 0 256px;
+
+	@media (max-width: $xl) {
+		margin: 214px 0 214px;
+	}
+
+	@media (max-width: $lg) {
+		margin: 171px 0 171px;
+	}
+
+	@media (max-width: $md) {
+		margin: 128px 0 128px;
+	}
 
 	&__wrapper {}
 
@@ -21,6 +34,160 @@
 
 		@media (max-width: $md) {
 			margin: 39px 0 29px;
+		}
+	}
+
+	&--main {
+
+		&--row {
+			margin: -32px;
+
+			@media (max-width: $lg) {
+				margin: -16px;
+			}
+		}
+
+		&--item {
+			width: 100%;
+		}
+
+		&--item__wrapper {
+			border-radius: 6px;
+
+			overflow: hidden;
+
+			padding: 32px;
+
+			@media (max-width: $lg) {
+				padding: 16px;
+			}
+		}
+		
+		&--item__image {
+			width: 100%;
+		}
+
+		&__top {
+			display: flex;
+
+			@media (max-width: $lg) {
+				flex-wrap: wrap;
+			}
+		}
+
+		&--top__item {
+			flex: 0 0 50%;
+
+			@media (max-width: $lg) {
+				flex: 0 0 100%;
+			}
+		}
+
+		&__left {}
+		
+		&__right {}
+
+		&__bot {
+			display: flex;
+			flex-wrap: wrap;
+
+			padding: 32px 0 0;
+
+			@media (max-width: $lg) {
+				padding: 16px 0 0;
+			}
+		}
+
+		&__small {
+			flex: 0 0 25%;
+
+			@media (max-width: $xxxl) {
+				flex: 0 0 50%;
+			}
+
+			@media (max-width: $lg) {
+				flex: 0 0 100%;
+			}
+		}
+
+		&__big {
+			flex: 0 0 50%;
+
+			@media (max-width: $xxxl) {
+				flex: 0 0 100%;
+			}
+		}
+
+		&--bot__item {
+			display: flex;
+			flex-direction: column;
+
+			&_first {
+
+				@media (max-width: $xxxl) {
+					order: 1;
+				}
+			}
+
+			&_middle {
+
+				@media (max-width: $xxxl) {
+					order: 3;
+				}
+			}
+
+			&_last {
+
+				@media (max-width: $xxxl) {
+					order: 2;
+				}
+			}
+		}
+
+		&--interactive {
+			flex-grow: 1;
+
+			&_none {
+
+				@media (max-width: $lg) {
+					display: none;
+				}
+			}
+
+			&__wrapper {
+				height: 100%;
+
+				border-radius: 6px;
+
+				overflow: hidden;
+
+				background-color: #000;
+
+				padding: 110px 16px;
+
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			&__body {
+				width: 100%;
+				max-width: 280px;
+			}
+
+			&__text {
+				max-width: 262px;
+
+				margin: 0 auto 77px;
+
+				text-align: center;
+
+				color: #fff;
+			}
+
+			&__button {
+				color: #fff;
+			}
 		}
 	}
 }
