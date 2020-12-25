@@ -498,7 +498,11 @@ body {
             align-items: center; }
   .header__logo {
     width: 237px;
-    height: 98px; }
+    height: 98px;
+    min-width: 315px; }
+    @media (max-width: 1350px) {
+      .header__logo {
+        min-width: 0; } }
     @media (max-width: 1200px) {
       .header__logo {
         display: none; } }
@@ -569,7 +573,12 @@ body {
       width: auto; }
   .header__phone {
     font-size: 40rem;
-    padding: 0 16px 0 0; }
+    padding: 0 16px 0 0;
+    min-width: 315px; }
+    @media (max-width: 1350px) {
+      .header__phone {
+        min-width: 247px;
+        font-size: 33rem; } }
     @media (max-width: 1200px) {
       .header__phone a {
         display: block;

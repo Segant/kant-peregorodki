@@ -35,6 +35,12 @@
 		width: 237px;
 		height: 98px;
 
+		min-width: 315px;
+
+		@media (max-width: $xxl) {
+			min-width: 0;
+		}
+
 		@media (max-width: $xl) {
 			display: none;
 		}
@@ -148,6 +154,13 @@
 	&__phone {
 		font-size: 40rem;
 		padding: 0 16px 0 0;
+
+		min-width: 315px;
+
+		@media (max-width: $xxl) {
+			min-width: 247px;
+			font-size: 33rem;
+		}
 
 		@media (max-width: $xl) {
 			
