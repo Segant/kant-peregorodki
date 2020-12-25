@@ -1852,6 +1852,9 @@ $xxl: 1350px;*/
   font-size: 52px;
   text-align: left;
   margin: 0 0 25px; }
+  @media (max-width: 1200px) {
+    .map__title {
+      text-align: center; } }
   @media (max-width: 500px) {
     .map__title {
       font-size: 40px; } }
@@ -1860,6 +1863,9 @@ $xxl: 1350px;*/
   color: #fff;
   text-align: left;
   margin: 0 0 50px; }
+  @media (max-width: 1200px) {
+    .map__text {
+      text-align: center; } }
 
 .map__buttons {
   display: -webkit-box;
@@ -1959,6 +1965,225 @@ $xxl: 1350px;*/
 .legal__value {
   font-family: "Formular - Bold";
   font-weight: 700; }
+
+.details {
+  background-image: url("../img/1apartment-n°four-novono-nora-von-nordenskjoeld-img_a4b1478006112cc4_14-5448-1-1f523a1.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.details__wrapper {
+  background-color: rgba(0, 0, 0, 0.7); }
+  .details__wrapper .container {
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 99px 0 100px; }
+
+.details__body {
+  max-width: 1250%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (max-width: 1350px) {
+    .details__body {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+
+.details__logo {
+  display: none; }
+  .details__logo img {
+    display: block;
+    margin: 0 auto; }
+  @media (max-width: 1200px) {
+    .details__logo {
+      display: block;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%; } }
+
+.details__image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%; }
+  .details__image img {
+    max-width: 568px;
+    width: 100%;
+    display: block;
+    margin: 0 auto; }
+  @media (max-width: 1200px) {
+    .details__image {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%; } }
+
+.details__content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  @media (max-width: 1200px) {
+    .details__content {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 1 100%;
+              flex: 0 1 100%; } }
+
+.details__title {
+  color: #fff;
+  font-size: 52px;
+  text-align: left;
+  margin: 0 0 20px; }
+  @media (max-width: 1200px) {
+    .details__title {
+      text-align: center; } }
+  @media (max-width: 500px) {
+    .details__title {
+      font-size: 40px; } }
+
+.details__text {
+  color: #fff;
+  text-align: left;
+  margin: 0 0 124px; }
+  @media (max-width: 1200px) {
+    .details__text {
+      margin: 0 0 90px;
+      text-align: center; } }
+
+.details__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  @media (max-width: 768px) {
+    .details__buttons {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
+
+.details__button {
+  min-width: 204px;
+  text-align: center;
+  margin: 0 33px 33px 0; }
+  .details__button:after, .details__button:before {
+    display: none; }
+  @media (max-width: 768px) {
+    .details__button {
+      margin: 0 90px 33px; }
+      .details__button:after, .details__button:before {
+        display: block; } }
+  @media (max-width: 500px) {
+    .details__button {
+      margin: 0 auto 33px; } }
+
+.details__button_whatsapp {
+  border-color: #00bfa5;
+  background-color: #00bfa5;
+  text-align: right;
+  background-image: url("../../img/ico-whatsapp_copy_2.png");
+  background-repeat: no-repeat;
+  background-position: 18px center;
+  color: #fff; }
+  .details__button_whatsapp:hover {
+    background-color: transparent;
+    color: #fff; }
+
+.details--text {
+  color: #000;
+  padding: 128px 0 268px; }
+  @media (max-width: 1200px) {
+    .details--text {
+      padding: 87px 0 200px; } }
+  @media (max-width: 768px) {
+    .details--text {
+      padding: 63px 0 124px; } }
+
+.details--text__wrapper .container-large .container {
+  padding: 0; }
+
+.details--text__text {
+  text-align: justify; }
+
+.details--text__top {
+  margin: 87px 0 24px; }
+  @media (max-width: 1200px) {
+    .details--text__top {
+      margin: 41px 0 29px; } }
+
+.details--text__wide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media (max-width: 1350px) {
+    .details--text__wide {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+
+.details--text--wide__left, .details--text--wide__right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%; }
+  @media (max-width: 1350px) {
+    .details--text--wide__left, .details--text--wide__right {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%; } }
+
+@media (max-width: 1350px) {
+  .details--text--wide__left {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; } }
+
+.details--text__small {
+  width: 100%;
+  max-width: 601px;
+  margin: 0 0 0 auto; }
+  .details--text__small p {
+    margin: 0 0 30px; }
+  @media (max-width: 1350px) {
+    .details--text__small {
+      max-width: 100%; } }
+
+@media (max-width: 1350px) {
+  .details--text--wide__right {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; } }
+
+.details--text__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 20px; }
+
+.details--text__image img {
+  width: 100%; }
 
 .footer {
   background: #000;
