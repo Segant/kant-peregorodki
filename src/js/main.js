@@ -4,6 +4,8 @@ $( document ).ready( () => {
 
 	navScroll();
 
+	// aad  some code 
+
 	function navScroll() {
 		if ( $(window).scrollTop() == 0) {
 			$("#header").removeClass( "header-scroll" );
