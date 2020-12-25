@@ -316,13 +316,100 @@ body {
 .layout {
 	position: relative;
 
-	.layout__wrapper {
+	&__wrapper {
 		position: absolute;
+
+		top: 0;
+		left: 0;
+
+		width: 100%;
+		height: 100%;
+
+		border-radius: 6px;
+
+		background-color: rgba( 0, 0, 0, 0.7);
+
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+
+		opacity: 0;
+
+		padding: 64px;
+
+		&:hover {
+			opacity: 1;
+		}
+
+		@media (max-width: $xxxl) {
+			padding: 32px;
+		}
+
+		@media (max-width: $lg) {
+			opacity: 1;
+
+			background-color: transparent;
+
+			background-image: linear-gradient(to top, rgba( 0, 0, 0, 0.7) 0%, rgba( 0, 0, 0, 0.6) 99px, rgba( 0, 0, 0, 0) 169px);
+		}
 	}
 
-	.layout__body {}
-	.layout__content {}
-	.layout__title {}
-	.layout__text {}
-	.layout__button {}
+	&__body {}
+	&__content {}
+
+	&__title {
+		color: #fff;
+
+		font-size: 40px;
+		font-weight: 700;
+
+		margin: 0 0 28px;
+
+		@media (max-width: $xxl) {
+			margin: 0 0 16px;
+		}
+
+		@media (max-width: $xl) {
+			margin: 0 0 10px;
+			font-size: 32px;
+		}
+
+		@media (max-width: $lg) {
+			font-size: 24px;
+		}
+	}
+
+	&__text {
+		max-width: 262px;
+
+		color: #fff;
+
+		@media (max-width: $xl) {
+			font-size: 18px;
+		}
+	}
+
+	&__button {
+		margin: 56px 0 0;
+
+		@media (max-width: $xxl) {
+			margin: 32px 0 0;
+		}
+
+		@media (max-width: $xl) {
+			margin: 16px 0 0;
+		}
+
+		@media (max-width: $lg) {
+			position: absolute;
+
+			top: 0;
+			left: 0;
+		
+			width: 100%;
+			height: 100%;
+
+			opacity: 0;
+		}
+	}
 }
