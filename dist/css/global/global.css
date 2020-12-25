@@ -73,6 +73,9 @@ body {
   .button:hover {
     background-color: #fff;
     color: #000; }
+  @media (max-width: 768px) {
+    .button {
+      font-size: 17px; } }
 
 .linkhover {
   position: relative; }
@@ -112,6 +115,9 @@ body {
 
 .text {
   font-size: 20px; }
+  @media (max-width: 768px) {
+    .text {
+      font-size: 18px; } }
 
 .heading {
   width: 100%;

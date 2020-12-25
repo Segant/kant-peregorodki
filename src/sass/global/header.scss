@@ -156,6 +156,16 @@
 				padding: 21px 32px;
 			}
 		}
+
+		@media (max-width: $md) {
+			font-size: 22px;
+			
+			padding: 0;
+			
+			& a {
+				padding: 21px 14px 21px 32px;
+			}
+		}
 	}
 
 	&__span {

@@ -1,0 +1,89 @@
+@import "../config";
+
+.gallery--header {
+	background-image: url('../img/1apartment-n°four-novono-nora-von-nordenskjoeld-img_a4b1478006112cc4_14-5448-1-1f523a1.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.gallery--header__wrapper {
+	padding: 240px 0 115px;
+
+	background-color: rgba(0, 0, 0, 0.7);
+
+	@media (max-width: $lg) {
+		padding: 190px 0 75px;
+	}
+}
+
+.gallery--header__body {
+	display: flex;
+
+	justify-content: space-between;
+
+	align-items: center;
+
+	@media (max-width: $xl) {
+		flex-wrap: wrap;
+	}
+}
+
+.gallery__header__left {
+	flex: 0 1 639px;
+}
+
+.gallery--header__title {
+	color: #fff;
+
+	font-size: 50px;
+
+	margin: 0 0 23px;
+
+	@media (max-width: $xl) {
+		font-size: 40px;
+
+		margin: 0 0 40px;
+	}
+
+	@media (max-width: $md) {
+		font-size: 30px;
+	}
+}
+
+.gallery--header__text {
+	color: #fff;
+
+	margin: 0 0 23px;
+}
+
+.gallery__header__right {
+	text-align: right;
+
+	overflow: hidden;
+
+	flex: 0 0 451px;
+
+	@media (max-width: $xl) {
+		flex: 0 0 100%;
+
+		margin: 32px 0 0;
+
+		text-align-last: left;
+	}
+}
+
+.gallery--header__button {}
+
+.gallery--text {
+	padding: 128px 0 88px;
+
+	@media (max-width: $lg) {
+		padding: 70px 0 65px;
+	}
+}
+
+.gallery--text__text {
+	color: #000;
+	text-align: justify;
+}

@@ -102,6 +102,12 @@
       .header__phone a {
         display: block;
         padding: 21px 32px; } }
+    @media (max-width: 768px) {
+      .header__phone {
+        font-size: 22px;
+        padding: 0; }
+        .header__phone a {
+          padding: 21px 14px 21px 32px; } }
   .header__span {
     position: relative; }
     .header__span:after, .header__span:before {

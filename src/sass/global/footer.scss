@@ -61,6 +61,10 @@
 		@media (max-width: $xl) {
 			font-size: 40px;
 		}
+
+		@media (max-width: $md) {
+			font-size: 30px;
+		}
 	}
 
 	.footer__adress {

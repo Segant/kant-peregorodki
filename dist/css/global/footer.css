@@ -56,6 +56,9 @@
     @media (max-width: 1200px) {
       .footer .footer__number {
         font-size: 40px; } }
+    @media (max-width: 768px) {
+      .footer .footer__number {
+        font-size: 30px; } }
   .footer .footer__adress {
     margin: 0 0 16px;
     font-size: 16px;

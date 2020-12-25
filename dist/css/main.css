@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Formular';
   src: url("../fonts/Formular-BlackItalic.eot");
@@ -215,6 +216,9 @@ body {
   .button:hover {
     background-color: #fff;
     color: #000; }
+  @media (max-width: 768px) {
+    .button {
+      font-size: 17px; } }
 
 .linkhover {
   position: relative; }
@@ -254,6 +258,9 @@ body {
 
 .text {
   font-size: 20px; }
+  @media (max-width: 768px) {
+    .text {
+      font-size: 18px; } }
 
 .heading {
   width: 100%;
@@ -554,6 +561,12 @@ body {
       .header__phone a {
         display: block;
         padding: 21px 32px; } }
+    @media (max-width: 768px) {
+      .header__phone {
+        font-size: 22px;
+        padding: 0; }
+        .header__phone a {
+          padding: 21px 14px 21px 32px; } }
   .header__span {
     position: relative; }
     .header__span:after, .header__span:before {
@@ -672,6 +685,9 @@ body {
     @media (max-width: 1200px) {
       .footer .footer__number {
         font-size: 40px; } }
+    @media (max-width: 768px) {
+      .footer .footer__number {
+        font-size: 30px; } }
   .footer .footer__adress {
     margin: 0 0 16px;
     font-size: 16px;
@@ -1736,6 +1752,9 @@ $xxl: 1350px;*/
     @media (max-width: 1200px) {
       .footer .footer__number {
         font-size: 40px; } }
+    @media (max-width: 768px) {
+      .footer .footer__number {
+        font-size: 30px; } }
   .footer .footer__adress {
     margin: 0 0 16px;
     font-size: 16px;
@@ -1863,3 +1882,77 @@ $xxl: 1350px;*/
         -webkit-box-flex: 0;
             -ms-flex: 0 0 100%;
                 flex: 0 0 100%; } }
+
+.gallery--header {
+  background-image: url("../img/1apartment-n°four-novono-nora-von-nordenskjoeld-img_a4b1478006112cc4_14-5448-1-1f523a1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.gallery--header__wrapper {
+  padding: 240px 0 115px;
+  background-color: rgba(0, 0, 0, 0.7); }
+  @media (max-width: 1024px) {
+    .gallery--header__wrapper {
+      padding: 190px 0 75px; } }
+
+.gallery--header__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (max-width: 1200px) {
+    .gallery--header__body {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+
+.gallery__header__left {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 639px;
+          flex: 0 1 639px; }
+
+.gallery--header__title {
+  color: #fff;
+  font-size: 50px;
+  margin: 0 0 23px; }
+  @media (max-width: 1200px) {
+    .gallery--header__title {
+      font-size: 40px;
+      margin: 0 0 40px; } }
+  @media (max-width: 768px) {
+    .gallery--header__title {
+      font-size: 30px; } }
+
+.gallery--header__text {
+  color: #fff;
+  margin: 0 0 23px; }
+
+.gallery__header__right {
+  text-align: right;
+  overflow: hidden;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 451px;
+          flex: 0 0 451px; }
+  @media (max-width: 1200px) {
+    .gallery__header__right {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%;
+      margin: 32px 0 0;
+      -moz-text-align-last: left;
+           text-align-last: left; } }
+
+.gallery--text {
+  padding: 128px 0 88px; }
+  @media (max-width: 1024px) {
+    .gallery--text {
+      padding: 70px 0 65px; } }
+
+.gallery--text__text {
+  color: #000;
+  text-align: justify; }
