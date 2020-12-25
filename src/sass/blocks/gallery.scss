@@ -1,63 +1,182 @@
+@import "../config";
+
 .gallery {
 	margin: 92px 0 0;
 
-	&__main {
-		height: 1440px;
+	&__wrapper {}
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	&__col {
+		flex: 0 0 50%;
+
+		@media (max-width: $xxxl) {
+			flex: 0 0 100%;
+		}
 	}
 
 	&__image {
-		height: 100%;
-
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
+		width: 100%;
 	}
 
-	&__image1 {
-		background-image: url("../img/loft-1 (1).jpg");
+	&__left {
+		display: flex;
+		flex-direction: column;
 	}
 
-	&__image2 {
-		background-image: url("../img/loft-1.jpg");
+	&--left__top {
+		flex: 0 0 33.33%;
 	}
 
-	&__image3 {
-		background-image: url("../img/peregorodka-loft.jpg");
+	&--item__wrapper {}
+
+	&--left__bot {
+		flex: 1 0 66.66%;
 	}
 
-	&__image4 {
-		background-image: url("../img/inter-business.jpg");
+	&--left__row {
+		display: flex;
+		flex-wrap: wrap;
 	}
 
-	&__image5 {
-		background-image: url("../img/659832444_loft-peregorodka-s.jpg");
+	&--left--row__item {
+		flex: 0 0 50%;
+
+		@media (max-width: $md) {
+			flex: 0 0 100%;
+		}
 	}
 
-	&__content {}
 
-	&__item {
-		color: #fff;
+	&--left__left {}
+
+	&--left__right {
+		display: flex;
+		flex-direction: column;
+
+		@media (max-width: $md) {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+	}
+
+	&--left__interactive {
+		flex: 0 0 50%;
+
+		@media (max-width: $md) {
+			flex: 0 0 100%;
+		}
+	}
+
+	&--left__mini {
+		flex: 0 0 50%;
+
+		.layout__title {
+			margin: 0 0 20px;
+		}
+
+		.layout__button {
+			margin: 46px 0 0;
+		}
+
+		@media (max-width: $md) {
+			flex: 0 0 100%;
+		}
+	}
+
+	&__right {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&--right__top {
+		flex: 0 0 66.66%;
+	}
+
+	&--right__bot {
+		flex: 0 0 33.33%;
+	}
+
+
+	&--row__container {
+		margin: -32px;
+	}
+
+	&--row__item {
+		padding: 32px;
+
+		border-radius: 6px;
 		overflow: hidden;
-		height: 100%;
+	}
 
-		&-center {
+	&--interactive {
+		flex-grow: 1;
+
+		&_none {
+
+			@media (max-width: $lg) {
+				display: none;
+			}
+		}
+
+		&__wrapper {
+			height: 100%;
+
+			border-radius: 6px;
+
+			overflow: hidden;
+
 			background-color: #000;
 
 			display: flex;
 			justify-content: center;
 			align-items: center;
+
+			@media (max-width: $md) {
+				padding: 64px;
+			}
+		}
+
+		&__body {
+			width: 100%;
+			max-width: 280px;
+		}
+
+		&__text {
+			max-width: 262px;
+
+			margin: 0 auto 77px;
+
+			text-align: center;
+
+			color: #fff;
+		}
+
+		&__button {
+			color: #fff;
 		}
 	}
 
-	&__body {}
+	&__layout {
 
-	&__text {
-		max-width: 262px;
+		@media (min-width: $xxxl) {
 
-		margin: 0 0 72px;
+			.layout__wrapper {
+				padding: 32px;
+			}
 
-		text-align: center;
+			.layout__title {
+				font-size: 30px;
+
+				margin: 0 0 16px;
+			}
+
+			.layout__button {
+				margin: 32px 0 0;
+			}
+		}
 	}
-
-	&__button {}
 }
