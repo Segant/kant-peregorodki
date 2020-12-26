@@ -27,4 +27,18 @@ $( document ).ready( () => {
 		$('body').toggleClass('overflow-hidden');
 	});
 
+	$('.calculus__slider').slick({
+		infinite: false,
+		dots: true,
+		appendDots: '.calculus__dots',
+		appendArrows: '.calculus__buttons',
+		prevArrow:"<button type='button' class='button lines animation slick-prev pull-left'><span>Назад</span></button>",
+      nextArrow:"<button type='button' class='button lines animation slick-next pull-right'><span>Далее</span></button>"
+	});
+
+	$('.realization--item__wrapper').click( function() {
+		text = $(this).children('.realization--value').text();
+		$('.calculus--preview__realization--value').text( text);
+	});
+
 });
