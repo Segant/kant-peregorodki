@@ -1471,7 +1471,7 @@ body {
 
 .realization--item__radio {
   display: none; }
-  .realization--item__radio:checked + span {
+  .realization--item__radio:checked + p + span {
     display: block; }
   .realization--item__radio:checked + p {
     text-decoration: none; }
@@ -1504,6 +1504,7 @@ body {
 
 .slick-slide {
   width: 100%;
+  outline: none;
   min-width: 0; }
 
 .slick-dots {

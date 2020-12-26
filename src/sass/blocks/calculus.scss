@@ -107,8 +107,9 @@
 
 	&:checked {
 
-		& + span {
+		& + p + span {
 			display: block;
+
 		}
 
 		& + p {
@@ -177,7 +178,7 @@
 
 .slick-slide {
 	width: 100%;
-
+	outline: none;
 	min-width: 0;
 }
 
