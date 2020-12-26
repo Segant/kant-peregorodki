@@ -49,7 +49,10 @@ $( document ).ready( () => {
 		}
 	});
 
-
+	if( ($(window).width() < 768) && $('.calculus').length){
+		// append
+		
+	}
 
 	$('.realization--item__wrapper').click( function() {
 		const text = $(this).children('.realization--value').text();
