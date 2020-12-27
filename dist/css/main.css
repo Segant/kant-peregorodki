@@ -1468,24 +1468,27 @@ body {
     .calculus--realization__wrapper .realiztion--item:last-child {
       padding: 0 calc(100vw / 2 - 90px - 6px) 0 0; } }
 
-.calculus--realization__arrow {
+.calculus-form__inner {
+  position: relative; }
+
+.calculus__arrow {
   position: fixed;
   display: none;
   content: "";
   top: 0;
   width: 66px;
-  height: calc(100%);
+  height: 100%;
   z-index: 1; }
   @media (max-width: 768px) {
-    .calculus--realization__arrow {
+    .calculus__arrow {
       display: block; } }
-  .calculus--realization__arrow_prev {
+  .calculus__arrow_prev {
     background: url("../img/Rounded_Rectangle_3_copy_10.svg"), -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0)), color-stop(10%, rgba(255, 255, 255, 0.3)), color-stop(90%, white));
     background: url("../img/Rounded_Rectangle_3_copy_10.svg"), linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 10%, white 90%);
     background-repeat: no-repeat;
     background-position: center center;
     left: -1px; }
-  .calculus--realization__arrow_next {
+  .calculus__arrow_next {
     background: url("../img/Rounded_Rectangle_3_copy_10.svg"), -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0)), color-stop(10%, rgba(255, 255, 255, 0.3)), color-stop(90%, white));
     background: url("../img/Rounded_Rectangle_3_copy_10.svg"), linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 10%, white 90%);
     background-repeat: no-repeat;

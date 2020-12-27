@@ -82,7 +82,11 @@
 	}
 }
 
-.calculus--realization__arrow {
+.calculus-form__inner {
+	position: relative;
+}
+
+.calculus__arrow {
 	position: fixed;
 
 	display: none;
@@ -92,7 +96,7 @@
 	top: 0;
 
 	width: 66px;
-	height: calc(100%);
+	height: 100%;
 
 	z-index: 1;
 
