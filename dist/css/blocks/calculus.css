@@ -85,6 +85,7 @@
           flex: 0 0 20%; }
 
 .realization--item__wrapper {
+  cursor: pointer;
   max-width: 180px;
   min-height: 180px;
   margin: 0 auto;
@@ -156,6 +157,7 @@
           flex: 0 0 20%; }
 
 .type--item__wrapper {
+  cursor: pointer;
   max-width: 180px;
   min-height: 208px;
   margin: 0 auto;
@@ -311,7 +313,7 @@
   text-align: justify;
   color: #999; }
   .slick-dots li {
-    cursor: default;
+    cursor: pointer;
     margin: 0 20px 0 0;
     padding: 0 25px 0 0;
     position: relative; }
@@ -561,6 +563,7 @@
       background-color: #fef668; }
 
 .color--item__wrapper {
+  cursor: pointer;
   max-width: 180px;
   min-height: 180px;
   margin: 0 auto;
@@ -688,6 +691,7 @@
       background-glass: #fef668; }
 
 .glass--item__wrapper {
+  cursor: pointer;
   max-width: 180px;
   min-height: 180px;
   margin: 0 auto;

@@ -73,6 +73,7 @@ body {
     transition: 0.5s all; }
 
 .button {
+  cursor: pointer;
   display: inline-block;
   border-radius: 6px;
   border: 1px solid #fff;

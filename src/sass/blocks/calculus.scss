@@ -121,6 +121,8 @@
 }
 
 .realization--item__wrapper {
+	cursor: pointer;
+
 	max-width: 180px;
 
 	min-height: 180px;
@@ -232,6 +234,8 @@
 }
 
 .type--item__wrapper {
+	cursor: pointer;
+
 	max-width: 180px;
 
 	min-height: 208px;
@@ -487,7 +491,8 @@
 	color: #999;
 
 	li {
-		cursor: default;
+		cursor: pointer;
+
 		margin: 0 20px 0 0;
 
 		padding: 0 25px 0 0;
@@ -904,6 +909,8 @@
 }
 
 .color--item__wrapper {
+	cursor: pointer;
+
 	max-width: 180px;
 
 	min-height: 180px;
@@ -1108,6 +1115,8 @@
 }
 
 .glass--item__wrapper {
+	cursor: pointer;
+	
 	max-width: 180px;
 
 	min-height: 180px;
