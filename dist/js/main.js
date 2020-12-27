@@ -54,6 +54,7 @@ $( document ).ready( () => {
 				draggable: false,
 				swipe: false,
 				dots: false,
+				variableWidth: true
 			},
 		}],
 	});
