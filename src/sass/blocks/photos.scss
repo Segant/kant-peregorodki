@@ -42,6 +42,10 @@
 		&--row {
 			margin: -32px;
 
+			@media (max-width: $xxxl) {
+				margin: -16px;
+			}
+
 			@media (max-width: $xl) {
 				margin: -16px;
 			}
@@ -57,6 +61,10 @@
 			overflow: hidden;
 
 			padding: 32px;
+
+			@media (max-width: $xxxl) {
+				padding: 16px;
+			}
 
 			@media (max-width: $xl) {
 				padding: 16px;
@@ -96,6 +104,10 @@
 			flex-wrap: wrap;
 
 			padding: 32px 0 0;
+
+			@media (max-width: $xxxl) {
+				padding: 16px 0 0;
+			}
 
 			@media (max-width: $xl) {
 				padding: 16px 0 0;

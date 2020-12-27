@@ -29,6 +29,7 @@
 		margin: -32px;
 
 		@media (max-width: $xxxl) {
+			margin: -16px;
 		}
 
 		@media (max-width: $xl) {
@@ -49,6 +50,8 @@
 
 		@media (max-width: $xxxl) {
 			flex: 0 1 37%;
+
+			padding: 16px;
 		}
 
 		@media (max-width: $xl) {
@@ -168,6 +171,10 @@
 
 		flex: 0 0 50%;
 
+		@media (max-width: $xxxl) {
+			padding: 16px;
+		}
+
 		@media (max-width: $xl) {
 			padding: 32px 16px;
 		}
@@ -202,6 +209,10 @@
 		padding: 32px;
 
 		flex: 0 0 50%;
+
+		@media (max-width: $xxxl) {
+			padding: 16px;
+		}
 
 		@media (max-width: $xl) {
 			padding: 32px 32px 32px 16px;

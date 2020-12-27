@@ -109,6 +109,10 @@
 	&--row__container {
 		margin: -32px;
 
+		@media (max-width: $xxxl) {
+			margin: -16px;
+		}
+
 		@media (max-width: $xl) {
 			margin: -16px;
 		}
@@ -119,6 +123,10 @@
 
 		border-radius: 6px;
 		overflow: hidden;
+
+		@media (max-width: $xxxl) {
+			padding: 16px;
+		}
 
 		@media (max-width: $xl) {
 			padding: 16px;

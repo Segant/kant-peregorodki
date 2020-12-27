@@ -107,6 +107,9 @@
             flex: 0 0 33.33%; }
   .gallery--row__container {
     margin: -32px; }
+    @media (max-width: 1600px) {
+      .gallery--row__container {
+        margin: -16px; } }
     @media (max-width: 1200px) {
       .gallery--row__container {
         margin: -16px; } }
@@ -114,6 +117,9 @@
     padding: 32px;
     border-radius: 6px;
     overflow: hidden; }
+    @media (max-width: 1600px) {
+      .gallery--row__item {
+        padding: 16px; } }
     @media (max-width: 1200px) {
       .gallery--row__item {
         padding: 16px; } }

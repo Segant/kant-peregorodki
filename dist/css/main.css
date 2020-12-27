@@ -1111,6 +1111,9 @@ body {
             flex: 0 0 33.33%; }
   .gallery--row__container {
     margin: -32px; }
+    @media (max-width: 1600px) {
+      .gallery--row__container {
+        margin: -16px; } }
     @media (max-width: 1200px) {
       .gallery--row__container {
         margin: -16px; } }
@@ -1118,6 +1121,9 @@ body {
     padding: 32px;
     border-radius: 6px;
     overflow: hidden; }
+    @media (max-width: 1600px) {
+      .gallery--row__item {
+        padding: 16px; } }
     @media (max-width: 1200px) {
       .gallery--row__item {
         padding: 16px; } }
@@ -1268,6 +1274,9 @@ body {
         margin: 39px 0 29px; } }
   .photos--main--row {
     margin: -32px; }
+    @media (max-width: 1600px) {
+      .photos--main--row {
+        margin: -16px; } }
     @media (max-width: 1200px) {
       .photos--main--row {
         margin: -16px; } }
@@ -1277,6 +1286,9 @@ body {
     border-radius: 6px;
     overflow: hidden;
     padding: 32px; }
+    @media (max-width: 1600px) {
+      .photos--main--item__wrapper {
+        padding: 16px; } }
     @media (max-width: 1200px) {
       .photos--main--item__wrapper {
         padding: 16px; } }
@@ -1308,6 +1320,9 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding: 32px 0 0; }
+    @media (max-width: 1600px) {
+      .photos--main__bot {
+        padding: 16px 0 0; } }
     @media (max-width: 1200px) {
       .photos--main__bot {
         padding: 16px 0 0; } }
@@ -2408,6 +2423,9 @@ input:disabled {
     display: -ms-flexbox;
     display: flex;
     margin: -32px; }
+    @media (max-width: 1600px) {
+      .about--main__wrapper {
+        margin: -16px; } }
     @media (max-width: 1200px) {
       .about--main__wrapper {
         margin: -16px;
@@ -2435,7 +2453,8 @@ input:disabled {
       .about--main__left {
         -webkit-box-flex: 0;
             -ms-flex: 0 1 37%;
-                flex: 0 1 37%; } }
+                flex: 0 1 37%;
+        padding: 16px; } }
     @media (max-width: 1200px) {
       .about--main__left {
         -webkit-box-flex: 0;
@@ -2537,6 +2556,9 @@ input:disabled {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%; }
+    @media (max-width: 1600px) {
+      .about--sub__left {
+        padding: 16px; } }
     @media (max-width: 1200px) {
       .about--sub__left {
         padding: 32px 16px; } }
@@ -2565,6 +2587,9 @@ input:disabled {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%; }
+    @media (max-width: 1600px) {
+      .about--sub__right {
+        padding: 16px; } }
     @media (max-width: 1200px) {
       .about--sub__right {
         padding: 32px 32px 32px 16px; } }
