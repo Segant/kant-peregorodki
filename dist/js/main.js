@@ -72,12 +72,13 @@ $( document ).ready( () => {
 		});
 	});
 
-	$(".calculus--realization__arrow_next").click( function() {
-		$(".calculus--realization").scrollLeft( $(".calculus--realization").scrollLeft() + 180);
+	$(".calculus__arrow_prev").click( function() {
+		// $(".slick-slide.slick-current").scrollLeft() + 180
+		$(".slick-slide.slick-current").scrollLeft(100);
 	});
 
-	$(".calculus--realization__arrow_prev").click( function() {
-		$(".calculus--realization").scrollLeft( $(".calculus--realization").scrollLeft() - 180);
+	$(".calculus__arrow_next").click( function() {
+		$(".slick-slide.slick-current").scrollLeft( $(".slick-slide.slick-current").scrollLeft() - 180);
 	});
 
 	if( ($(window).width() < 1024) && $('.calculus').length){
