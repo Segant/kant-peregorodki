@@ -70,15 +70,21 @@ $( document ).ready( () => {
 				$(this).removeClass('holder-border_active');
 			}
 		});
+
+		
 	});
 
 	$(".calculus__arrow_prev").click( function() {
-		// $(".slick-slide.slick-current").scrollLeft() + 180
-		$(".slick-slide.slick-current").scrollLeft(100);
+		$(".slick-slide.slick-current .calculus__arrow-container").animate({
+			scrollLeft: '+=180'
+			// height: "toggle"
+		});
 	});
 
 	$(".calculus__arrow_next").click( function() {
-		$(".slick-slide.slick-current").scrollLeft( $(".slick-slide.slick-current").scrollLeft() - 180);
+		$(".slick-slide.slick-current .calculus__arrow-container").animate({
+			scrollLeft: '-=180'
+		});
 	});
 
 	if( ($(window).width() < 1024) && $('.calculus').length){

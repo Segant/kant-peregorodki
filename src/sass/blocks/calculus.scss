@@ -99,10 +99,7 @@
 	height: 100%;
 
 	z-index: 1;
-
-	&:hover{
-		background: pink;
-	}
+	
 
 	@media (max-width: $md) {
 		display: block;
@@ -220,9 +217,7 @@
 	}
 }
 
-.calculus--type
-
-.calculus--type__wrapper {
+.calculus--type {
 	display: flex;
 	flex-wrap: wrap;
 
@@ -867,9 +862,7 @@
 	}
 }
 
-.calculus--color {}
-
-.calculus--color__wrapper {
+.calculus--color {
 	display: flex;
 	flex-wrap: wrap;
 
