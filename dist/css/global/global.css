@@ -217,12 +217,12 @@ body {
 
 .padding {
   margin: -32px; }
-  @media (max-width: 1200px) {
+  @media (max-width: 1600px) {
     .padding {
       margin: -16px; } }
   .padding__item {
     padding: 32px; }
-    @media (max-width: 1200px) {
+    @media (max-width: 1600px) {
       .padding__item {
         padding: 16px; } }
 

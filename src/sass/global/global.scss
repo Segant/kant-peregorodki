@@ -289,14 +289,14 @@ body {
 .padding {
 	margin: -32px;
 
-	@media (max-width: $xl) {
+	@media (max-width: $xxxl) {
 		margin: -16px;
 	}
 
 	&__item {
 		padding: 32px;
 
-		@media (max-width: $xl) {
+		@media (max-width: $xxxl) {
 			padding: 16px;
 		}
 	}

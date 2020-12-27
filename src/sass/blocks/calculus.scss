@@ -32,14 +32,22 @@
 
 .calculus__form {
 	display: flex;
+
+	@media (max-width: $lg) {
+		flex-wrap: wrap;
+	}
 }
 
 .calculus__item {}
 
 .calculus__left {
-	flex: 0 0 970px;
+	flex: 0 1 970px;
 
 	overflow: hidden;
+
+	@media (max-width: $lg) {
+		order: 2;
+	}
 
 	.calculus__item-wrapper {}
 }
@@ -47,10 +55,20 @@
 .calculus--realization {
 	display: flex;
 	flex-wrap: wrap;
+
+	@media (max-width: $md) {
+		flex-wrap: nowrap;
+
+		overflow: auto;
+	}
+}
+
+.calculus--realization__arrow {
+	
 }
 
 .realiztion--item {
-	flex: 0 0 20%;
+	flex: 0 0 180px;
 }
 
 .realization--item__wrapper {
@@ -66,14 +84,30 @@
 
 	height: 100%;
 
-	padding: 22px 45px;
+	padding: 27px 39px 10px;
 
 	position: relative;
-}
 
-.realization--item__image {
-	max-height: 94px;
-	width: auto;
+	@media (max-width: $xl) {
+		padding: 27px 25px 10px;
+	}
+
+	@media (max-width: $lg) {
+		padding: 27px 10px 10px;
+	}
+
+	@media (max-width: $md) {
+		width: 180px;
+	}
+
+	img {
+		height: 84px;
+		width: auto;
+
+		margin: 0 0 10px;
+
+		transform: skewY(15deg);
+	}
 }
 
 .realization--item__text {
@@ -105,7 +139,7 @@
 .realization--item__radio {
 	display: none;
 
-	&:checked {
+	&:checked, &:hover {
 
 		& + p + span {
 			display: block;
@@ -118,10 +152,60 @@
 	}
 }
 
-.calculus__item-wrapper {}
+.calculus__item-wrapper {
+	position: relative;
+
+	&_slider {
+
+
+		&:before, &:after {
+			position: absolute;
+
+			display: none;
+
+			content: "";
+
+			top: 0;
+
+			width: 66px;
+			height: calc(100%);
+
+			z-index: 1;
+
+			@media (max-width: $md) {
+				display: block;
+			}
+		}
+
+		&:before {
+
+			background: url('../img/Rounded_Rectangle_3_copy_10.svg'), linear-gradient(to left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 10%, rgba(255,255,255,1) 90%);
+
+			background-repeat: no-repeat;
+			background-position: center center;
+
+			left: -1px;
+		}
+
+		&:after {
+			background:  url('../img/Rounded_Rectangle_3_copy_10.svg'), linear-gradient(to left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 10%, rgba(255,255,255,1) 90%);
+
+			background-repeat: no-repeat;
+			background-position: center center;
+
+			right: -1px;
+
+			transform: scaleX(-1);
+		}
+	}
+}
 
 .calculus__slider {
 	max-width: 100%;
+}
+
+.calculus__slider-item {
+
 }
 
 .calculus__slider--item {
@@ -129,12 +213,19 @@
 
 	font-size: 50px;
 	color: #000;
+	position: relative;
+
+	@media (max-width: $md) {
+		padding: 0 calc(100vw / 2 - 90px - 16px) 0;
+	}
 }
 
 .calculus__buttons {
 	margin: 36px 0 0;
 	display: flex;
 	justify-content: center;
+
+	overflow: hidden;
 }
 
 /* Slider */
@@ -187,28 +278,58 @@
 
 	margin: 30px 0 50px;
 
-	.slick-active {
-		border: 0px solid #fff;
+	font-size: 16px;
+	text-align: justify;
+	color: #999;
 
-		button {
-			font-weight: 700;
+	li {
+		cursor: default;
+		margin: 0 20px 0 0;
 
-			border: none;
+		padding: 0 25px 0 0;
+
+		position: relative;
+
+		@media (max-width: $xl) {
+			font-size: 15px;
+
+			margin: 0 17px 0 0;
+
+			padding: 0 14px 0 0;
+		}
+
+		&:before, &:after {
+			content: "";
+
+			position: absolute;
+
+			display: block;
+
+			top: 50%;
+			right: 0;
+
+			background-color: #999;
+
+			width: 1px;
+			height: 15px;
+		}
+
+		&:before {
+			transform: scaleX( -1) translateY( -85%) rotate( 45deg);
+		}
+
+		&:after {
+			transform: scaleX( -1) translateY( -15%) rotate( -45deg);
 		}
 	}
 
-	li {
+	.slick-active {
+		border: 0px solid #fff;
+
 		color: #000;
-		font-size: 16px;
-		text-align: justify;
-		color: #999;
-
-		margin: 0 15px 0 0;
-
-		button {
-			border: none;
-
-			background-color: #fff;
+		
+		a {
+			font-weight: 700;
 		}
 	}
 }
@@ -217,7 +338,7 @@
 	border-radius: 6px;
 	border: 1px solid #000;
 
-	margin: 0 32px 32px 0;
+	margin: 0 32px 0 0;
 
 	background-color: #fff;
 	color: #000;
@@ -371,6 +492,15 @@
 
 .calculus__right {
 	flex: 0 0 295px;
+
+	@media (max-width: $xl) {
+		flex: 0 0 231px;
+	}
+
+	@media (max-width: $lg) {
+		order: 1;
+		flex: 0 0 100%;
+	}
 }
 
 .calculus__item-wrapper {}
@@ -385,8 +515,58 @@
 	margin: 0 0 0 auto;
 
 	padding: 32px;
+
+	@media (max-width: $lg) {
+		max-width: 100%;
+
+		border: none;
+
+		display: flex;
+		justify-content: space-around;
+
+		margin: 0;
+	}
+
+	@media (max-width: $md) {
+		padding: 0px;
+	}
 }
-.calculus--preview__row {}
+
+.calculus--preview__row {
+
+	@media (max-width: $xl) {
+
+		div:last-child {
+			border: none;
+		}
+	}
+
+	@media (max-width: $lg) {
+		flex: 0 0 207px;
+	}
+
+	@media (max-width: $md) {
+		max-width: 300px;
+
+		padding: 0 0 0 16px;
+
+		flex: 0 0 50%;
+	}
+}
+
+.calculus--preview__row_first {
+
+	@media (max-width: $md) {
+		padding: 0 16px 0 0;
+	}
+}
+
+.calculus--preview__row_last {
+
+	@media (max-width: $lg) {
+		display: none;
+	}
+}
 
 .calculus--preview__title {
 	color: #000;
@@ -446,4 +626,8 @@
 	background-color: #000;
 
 	color: #fff;
+
+	@media (max-width: $lg) {
+		display: none;
+	}
 }
