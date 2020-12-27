@@ -718,7 +718,7 @@
 
 	margin: 0 0 0 auto;
 
-	padding: 32px;
+	padding: 16px;
 
 	@media (max-width: $lg) {
 		max-width: 100%;
@@ -1346,6 +1346,7 @@ input:disabled {
 }
 
 .contacts-form__wrapper {
+	margin: 0 0 64px;
 
 	@media (max-width: $md) {
 	}

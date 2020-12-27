@@ -440,7 +440,7 @@
   border-radius: 6px;
   border: 1px solid #999;
   margin: 0 0 0 auto;
-  padding: 32px; }
+  padding: 16px; }
   @media (max-width: 1024px) {
     .calculus--preview {
       max-width: 100%;
@@ -863,6 +863,9 @@ input:disabled {
     .calculus__slider--item_contacts-form {
       width: 100vw;
       padding: 0; } }
+
+.contacts-form__wrapper {
+  margin: 0 0 64px; }
 
 .contacts-form__row {
   max-width: 714px;

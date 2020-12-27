@@ -44,13 +44,14 @@ $( document ).ready( () => {
 		appendArrows: '.calculus__buttons',
 		prevArrow:"<button type='button' class='button lines animation slick-prev pull-left'><span>Назад</span></button>",
 		nextArrow:"<button type='button' class='button lines animation slick-next pull-right'><span>Далее</span></button>",
+		adaptiveHeight: true,
 		customPaging: function(slick,i) {
 			return `<a>${paginationTextDesktop[i]}</a>`;
 		},
 		responsive: [{
 			breakpoint: 768,
 			settings: {
-				adaptiveHeight: true,
+				draggable: false,
 				swipe: false,
 				dots: false,
 			},
