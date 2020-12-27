@@ -114,4 +114,16 @@ $( document ).ready( () => {
 		$("#appending-sizes-holder").text( count);
 	});
 
+	function mobileCalculusSlides(){
+		if(!($('.calculus__slider').length && $(window).width() <= 768)){
+			return
+		}
+		const winW = $(window).width();
+		
+		$('.calculus__slider .slick-slide').width(winW).addClass('js-width');
+		
+	}
+
+	mobileCalculusSlides();
+
 });

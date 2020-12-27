@@ -48,6 +48,12 @@
 	@media (max-width: $lg) {
 		order: 2;
 	}
+	@media (max-width: $md) {
+		padding: 0;
+		padding-bottom: 16px;
+	}
+	
+
 }
 
 .calculus--realization {}
@@ -429,7 +435,8 @@
 	user-select: none;
 
 	@media (max-width: $md) {
-		padding: 0 calc(100vw / 2 - 90px - 16px) 0;
+		// padding: 0 calc(100vw / 2 - 90px - 16px) 0;
+		padding: 0;
 	}
 }
 
@@ -557,6 +564,10 @@
 	background-color: #fff;
 	color: #000;
 
+	@media (max-width: $md) {
+		margin: 0 16px;
+	}
+
 	&:hover {
 		background-color: #000;
 
@@ -566,6 +577,8 @@
 			background-color: #fff;
 		}
 	}
+
+	
 }
 
 .slick-arrow[aria-disabled="true"] {
@@ -1273,6 +1286,7 @@
 
 	@media (max-width: $md) {
 		width: 100vw;
+		margin: 0;
 	}
 }
 
@@ -1376,6 +1390,9 @@ input:disabled {
 
 	@media (max-width: $lg) {
 		flex-wrap: wrap;
+	}
+	@media (max-width: $md) {
+		margin: 0;
 	}
 }
 
