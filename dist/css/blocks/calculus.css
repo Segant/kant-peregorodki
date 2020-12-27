@@ -53,9 +53,6 @@
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap;
       overflow: auto; } }
-  @media (max-width: 768px) {
-    .calculus--realization__wrapper .realiztion--item:last-child {
-      padding: 0 calc(100vw / 2 - 90px - 6px) 0 0; } }
 
 .calculus--realization__arrow {
   position: fixed;
