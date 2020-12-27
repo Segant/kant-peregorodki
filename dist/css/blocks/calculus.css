@@ -142,7 +142,8 @@
   .realization--item__radio:checked + p, .realization--item__radio:hover + p {
     text-decoration: none; }
 
-.calculus--type {
+.calculus--type
+.calculus--type__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,12 +151,14 @@
       flex-wrap: wrap;
   position: relative; }
   @media (max-width: 768px) {
-    .calculus--type {
+    .calculus--type
+.calculus--type__wrapper {
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap;
       overflow: auto; } }
   @media (max-width: 768px) {
-    .calculus--type .type--item:last-child {
+    .calculus--type
+.calculus--type__wrapper .type--item:last-child {
       padding: 0 calc(100vw / 2 - 90px - 6px) 0 0; } }
 
 .type--item {
@@ -536,7 +539,7 @@
     .calculus--preview__button {
       display: none; } }
 
-.calculus--color {
+.calculus--color__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -544,12 +547,12 @@
       flex-wrap: wrap;
   position: relative; }
   @media (max-width: 768px) {
-    .calculus--color {
+    .calculus--color__wrapper {
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap;
       overflow: auto; } }
   @media (max-width: 768px) {
-    .calculus--color .color--item:last-child {
+    .calculus--color__wrapper .color--item:last-child {
       padding: 0 calc(100vw / 2 - 90px - 6px) 0 0; } }
 
 .color--item {

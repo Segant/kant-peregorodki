@@ -216,7 +216,9 @@
 	}
 }
 
-.calculus--type {
+.calculus--type
+
+.calculus--type__wrapper {
 	display: flex;
 	flex-wrap: wrap;
 
@@ -861,7 +863,9 @@
 	}
 }
 
-.calculus--color {
+.calculus--color {}
+
+.calculus--color__wrapper {
 	display: flex;
 	flex-wrap: wrap;
 
