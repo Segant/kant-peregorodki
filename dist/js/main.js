@@ -53,6 +53,7 @@ $( document ).ready( () => {
 				adaptiveHeight: true,
 				swipe: false,
 				dots: false,
+				variableWidth: true
 			},
 		}],
 	});
