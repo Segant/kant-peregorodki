@@ -76,7 +76,7 @@
 		@media (max-width: $md) {
 			
 			&:last-child {
-				padding: 0 calc(100vw / 2 - 90px - 6px) 0 0;
+				// padding: 0 calc(100vw / 2 - 90px - 6px) 0 0;
 			}
 		}
 	}
@@ -100,6 +100,10 @@
 
 	z-index: 1;
 
+	&:hover{
+		background: pink;
+	}
+
 	@media (max-width: $md) {
 		display: block;
 	}
@@ -111,7 +115,7 @@
 		background-repeat: no-repeat;
 		background-position: center center;
 
-		left: -1px;
+		left: 0;
 	}
 
 	&_next {
@@ -120,9 +124,9 @@
 		background-repeat: no-repeat;
 		background-position: center center;
 
-		left: calc(100vw - 65px);
-
-		transform: translateX( -50%) scaleX(-1);
+		// left: calc(100vw - 65px);
+		right: 0;
+		transform: scaleX(-1);
 	}
 }
 
