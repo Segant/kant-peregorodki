@@ -50,23 +50,66 @@ $( document ).ready( () => {
 		responsive: [{
 			breakpoint: 768,
 			settings: {
+				adaptiveHeight: true,
 				swipe: false,
 				dots: false,
 			},
 		}],
 	});
 
+	$('.calculus__slider').on('beforeChange', function(event, slick, direction, currentSlide){
+		page = currentSlide + 1;
+		text = paginationTextDesktop[direction].slice(3);
+		$(".calculus-custom__dots").text("Шаг: "+page+"/6 "+ text);
+		$(".holder-border").each(function(i,elem) {
+			if( i == currentSlide ) {
+				$(this).addClass('holder-border_active');
+			} else {
+				$(this).removeClass('holder-border_active');
+			}
+		});
+	});
+
+	$(".calculus--realization__arrow_next").click( function() {
+		$(".calculus--realization").scrollLeft( $(".calculus--realization").scrollLeft() + 180);
+	});
+
+	$(".calculus--realization__arrow_prev").click( function() {
+		$(".calculus--realization").scrollLeft( $(".calculus--realization").scrollLeft() - 180);
+	});
+
 	if( ($(window).width() < 1024) && $('.calculus').length){
 		$('.calculus--preview__row_last').children().appendTo('.calculus--preview__row_first');
 	}
 
-	$('.realization--item__wrapper').click( function() {
-		const text = $(this).children('.realization--value').text();
-		$('.calculus--preview__realization--value').text(text);
+	$('.appending-item').click( function() {
+		const text = $(this).children('.appending-item__value').text();
+		const holder = $(`#${$(this).attr('data-holder-id')}`);
+		holder.text(text);
 
-		const image = $(this).children('.realization--item__image').clone();
-		$('.calculus--preview__image').empty();
-		$('.calculus--preview__image').append( image);
+		if( $(this).children('.appending-item__image').length) {
+			const image = $(this).children('.appending-item__image').clone();
+			$('#appending-image-holder').empty();
+			$('#appending-image-holder').append( image);
+		}
+	});
+
+	$(".sizes-form__input").blur( function() {
+		let count = 0;
+
+		if( $(".sizes-form__input_a").val().length) {
+			count += $(".sizes-form__input_a").val();
+		}
+		if( $(".sizes-form__input_b").val().length) {
+			count += " x ";
+			count += $(".sizes-form__input_b").val();
+		}
+		if( $(".sizes-form__input_c").val().length) {
+			count += " x ";
+			count += number( $(".sizes-form__input_c").val());
+		}
+
+		$("#appending-sizes-holder").text( count);
 	});
 
 });
