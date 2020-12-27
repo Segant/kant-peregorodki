@@ -275,7 +275,11 @@
   height: 100%;
   font-size: 50px;
   color: #000;
-  position: relative; }
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
   @media (max-width: 768px) {
     .calculus__slider--item {
       padding: 0 calc(100vw / 2 - 90px - 16px) 0; } }

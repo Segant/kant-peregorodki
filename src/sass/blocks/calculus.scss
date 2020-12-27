@@ -423,6 +423,8 @@
 	color: #000;
 	position: relative;
 
+	user-select: none;
+
 	@media (max-width: $md) {
 		padding: 0 calc(100vw / 2 - 90px - 16px) 0;
 	}
@@ -1116,7 +1118,7 @@
 
 .glass--item__wrapper {
 	cursor: pointer;
-	
+
 	max-width: 180px;
 
 	min-height: 180px;
