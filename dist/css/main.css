@@ -1472,7 +1472,7 @@ body {
   position: relative; }
 
 .calculus__arrow {
-  position: fixed;
+  position: absolute;
   display: none;
   content: "";
   top: 0;
