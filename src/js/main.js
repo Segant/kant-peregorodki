@@ -75,7 +75,6 @@ $( document ).ready( () => {
 			}
 		});
 
-<<<<<<< HEAD
 		if( $(window).width() <= 768 ) {
 
 			if( currentSlide == 2 || currentSlide == 5 ) {
@@ -88,28 +87,14 @@ $( document ).ready( () => {
 	});
 
 	$(".calculus__arrow_prev").click( function() {
-		$(".slick-current .calculus__arrow-container").animate({
-			scrollLeft: "-=180",
-=======
-		
-	});
-
-	$(".calculus__arrow_prev").click( function() {
 		$(".slick-slide.slick-current .calculus__arrow-container").animate({
-			scrollLeft: '+=180'
-			// height: "toggle"
->>>>>>> 5ed80d8ad2baf49a099a5e21127aea2a06631ec7
+			scrollLeft: "-=180",
 		});
 	});
 
 	$(".calculus__arrow_next").click( function() {
-<<<<<<< HEAD
-		$(".slick-current .calculus__arrow-container").animate({
-			scrollLeft: "+=180",
-=======
 		$(".slick-slide.slick-current .calculus__arrow-container").animate({
-			scrollLeft: '-=180'
->>>>>>> 5ed80d8ad2baf49a099a5e21127aea2a06631ec7
+			scrollLeft: "+=180",
 		});
 	});
 
