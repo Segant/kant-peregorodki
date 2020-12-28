@@ -61,24 +61,41 @@ $( document ).ready( () => {
 
 	$('.calculus__slider').on('beforeChange', function(event, slick, direction, currentSlide){
 		page = currentSlide + 1;
-		text = paginationTextDesktop[direction].slice(3);
+
+		text = paginationTextDesktop[currentSlide].slice(3);
+
 		$(".calculus-custom__dots").text("Шаг: "+page+"/6 "+ text);
+
 		$(".holder-border").each(function(i,elem) {
+
 			if( i == currentSlide ) {
 				$(this).addClass('holder-border_active');
 			} else {
 				$(this).removeClass('holder-border_active');
 			}
 		});
+
+		if( $(window).width() <= 768 ) {
+
+			if( currentSlide == 2 || currentSlide == 5 ) {
+				$(".calculus__arrow").hide();
+			} else {
+				$(".calculus__arrow").show();
+			}
+
+		}
 	});
 
 	$(".calculus__arrow_prev").click( function() {
-		// $(".slick-slide.slick-current").scrollLeft() + 180
-		$(".slick-slide.slick-current").scrollLeft(100);
+		$(".slick-current .calculus__arrow-container").animate({
+			scrollLeft: "-=180",
+		});
 	});
 
 	$(".calculus__arrow_next").click( function() {
-		$(".slick-slide.slick-current").scrollLeft( $(".slick-slide.slick-current").scrollLeft() - 180);
+		$(".slick-current .calculus__arrow-container").animate({
+			scrollLeft: "+=180",
+		});
 	});
 
 	if( ($(window).width() < 1024) && $('.calculus').length){
@@ -98,7 +115,7 @@ $( document ).ready( () => {
 	});
 
 	$(".sizes-form__input").blur( function() {
-		let count = 0;
+		let count = '';
 
 		if( $(".sizes-form__input_a").val().length) {
 			count += $(".sizes-form__input_a").val();
@@ -126,5 +143,9 @@ $( document ).ready( () => {
 	}
 
 	mobileCalculusSlides();
+
+	$('.color--item__popup').magnificPopup({
+		type: 'image',
+	});
 
 });

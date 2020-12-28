@@ -1476,8 +1476,6 @@ body {
   width: 66px;
   height: 100%;
   z-index: 1; }
-  .calculus__arrow:hover {
-    background: pink; }
   @media (max-width: 768px) {
     .calculus__arrow {
       display: block; } }
@@ -1520,7 +1518,8 @@ body {
       padding: 25px 10px 10px; } }
   @media (max-width: 768px) {
     .realization--item__wrapper {
-      width: 180px; } }
+      width: 180px;
+      height: 180px; } }
   .realization--item__wrapper img {
     height: 84px;
     width: auto;
@@ -1599,11 +1598,17 @@ body {
       padding: 25px 0 10px; } }
   @media (max-width: 768px) {
     .type--item__wrapper {
-      width: 180px; } }
+      width: 180px;
+      height: 180px;
+      min-height: 180px;
+      padding: 5px 0; } }
   .type--item__wrapper img {
     height: auto;
     margin: 0 0 10px;
     max-width: 100%; }
+    @media (max-width: 768px) {
+      .type--item__wrapper img {
+        margin: 0; } }
 
 .type--item__image-wrapper {
   max-width: 100%;
@@ -1623,6 +1628,9 @@ body {
           align-items: center;
   margin: 0 0 33px;
   padding: 0 0 0 5px; }
+  @media (max-width: 768px) {
+    .type--item__image-wrapper {
+      margin: 0 0 15px; } }
 
 .type--item__text {
   color: #000;
@@ -1639,6 +1647,9 @@ body {
   text-align: center;
   margin: 9px 0 0;
   padding: 0 10px; }
+  @media (max-width: 768px) {
+    .type-item__small {
+      margin: 5px 0 0; } }
 
 .radio__border {
   display: none;
@@ -1713,6 +1724,12 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   overflow: hidden; }
+  @media (max-width: 768px) {
+    .calculus__buttons button {
+      padding: 18px 28px;
+      margin: 0 14px; }
+      .calculus__buttons button span {
+        min-width: 78px; } }
 
 /* Slider */
 .slick-list {
@@ -1915,7 +1932,7 @@ body {
   font-size: 16px;
   font-weight: 700;
   text-align: center;
-  margin: 0 0 10px; }
+  margin: 3px 0 3px; }
 
 .calculus--preview__image {
   margin: 0 0 10px;
@@ -1930,8 +1947,12 @@ body {
   font-size: 16px;
   font-weight: 400;
   text-align: center;
-  padding: 0 0 10px;
+  padding: 0 0 6px;
+  margin: 0 auto;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  @media (max-width: 768px) {
+    .calculus--preview__text {
+      max-width: 167px; } }
 
 .calculus--preview__count {
   font-size: 32px;
@@ -2109,9 +2130,9 @@ body {
     z-index: 2;
     border-radius: 6px;
     border: 1px dashed #999;
-    background-glass: #ddd; }
+    background-color: #ddd; }
     .glass--item__button:hover {
-      background-glass: #fef668; }
+      background-color: #fef668; }
   .glass--item:hover .glass--item__button {
     display: block; }
     .glass--item:hover .glass--item__button:hover {
@@ -2137,7 +2158,7 @@ body {
     .glass--item__wrapper {
       max-width: 100%;
       min-height: 180px;
-      padding: 25px 0 10px; } }
+      padding: 15px 0 10px; } }
   @media (max-width: 768px) {
     .glass--item__wrapper {
       width: 180px; } }
@@ -2221,8 +2242,7 @@ body {
           flex-wrap: wrap; } }
   @media (max-width: 768px) {
     .sizes__wrapper {
-      width: 100vw;
-      margin: 0; } }
+      width: 100vw; } }
 
 .sizes__image, .sizes__form {
   -webkit-box-flex: 0;
@@ -2297,15 +2317,16 @@ input:disabled {
       padding: 0; } }
 
 .contacts-form__wrapper {
-  margin: 0 0 64px; }
+  margin: 25px 0 64px; }
 
 .contacts-form__row {
-  max-width: 714px;
+  max-width: 682px;
   width: 100%;
   color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin: -16px; }
   @media (max-width: 1024px) {
     .contacts-form__row {
       -ms-flex-wrap: wrap;
@@ -2321,6 +2342,7 @@ input:disabled {
   margin: 0 0 25px; }
 
 .contacts-form__left, .contacts-form__right {
+  padding: 16px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%; }
@@ -2392,6 +2414,7 @@ input:disabled {
   color: #999;
   font-size: 11px;
   font-weight: 400;
+  max-width: 312px;
   text-align: center; }
   @media (max-width: 1024px) {
     .calculus--preview__sub {
@@ -2399,23 +2422,28 @@ input:disabled {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 100%;
               flex: 0 0 100%;
-      margin: 10px 0 0; } }
+      margin: 10px auto 15px; } }
+
+@media (max-width: 768px) {
+  .calculus__dots {
+    padding: 0 0 0 16px; } }
 
 .calculus-custom__dots {
   display: none;
   color: #000;
   font-size: 16px;
   font-weight: 700;
-  text-align: center; }
+  text-align: center;
+  padding: 20px 0 0; }
   @media (max-width: 768px) {
     .calculus-custom__dots {
       display: block; } }
 
 .holder-border {
-  padding: 4.5px 16px; }
+  padding: 4px 8px; }
   @media (max-width: 768px) {
     .holder-border {
-      padding: 16px 4px; } }
+      padding: 6px 4px 10px; } }
   @media (max-width: 768px) {
     .holder-border_active {
       border-radius: 6px;
@@ -3113,7 +3141,7 @@ $xxl: 1350px;*/
   border-color: #00bfa5;
   background-color: #00bfa5;
   text-align: right;
-  background-image: url("../../img/ico-whatsapp_copy_2.png");
+  background-image: url("../img/ico-whatsapp_copy_2.png");
   background-repeat: no-repeat;
   background-position: 18px center;
   color: #fff; }

@@ -100,10 +100,6 @@
 
 	z-index: 1;
 
-	&:hover{
-		background: pink;
-	}
-
 	@media (max-width: $md) {
 		display: block;
 	}
@@ -168,6 +164,8 @@
 
 	@media (max-width: $md) {
 		width: 180px;
+
+		height: 180px;
 	}
 
 	img {
@@ -289,6 +287,12 @@
 
 	@media (max-width: $md) {
 		width: 180px;
+
+		height: 180px;
+
+		min-height: 180px;
+
+		padding: 5px 0;
 	}
 
 	img {
@@ -298,6 +302,10 @@
 		margin: 0 0 10px;
 
 		max-width: 100%;
+
+		@media (max-width: $md) {
+			margin: 0;
+		}
 	}
 }
 
@@ -314,6 +322,10 @@
 	margin: 0 0 33px;
 
 	padding: 0 0 0 5px;
+
+	@media (max-width: $md) {
+		margin: 0 0 15px;
+	}
 }
 
 .type--item__text {
@@ -338,6 +350,10 @@
 	margin: 9px 0 0;
 
 	padding: 0 10px;
+
+	@media (max-width: $md) {
+		margin: 5px 0 0;
+	}
 }
 
 .radio__border {
@@ -456,6 +472,19 @@
 	justify-content: center;
 
 	overflow: hidden;
+
+	button {
+
+		@media (max-width: $md) {
+			padding: 18px 28px;
+
+			margin: 0 14px;
+
+			span {
+				min-width: 78px;
+			}
+		}
+	}
 }
 
 /* Slider */
@@ -813,7 +842,7 @@
 
 	text-align: center;
 
-	margin: 0 0 10px;
+	margin: 3px 0 3px;
 }
 
 .calculus--preview__image {
@@ -838,9 +867,15 @@
 
 	text-align: center;
 
-	padding: 0 0 10px;
+	padding: 0 0 6px;
+
+	margin: 0 auto;
 
 	border-bottom: 1px solid rgba( 0, 0, 0, 0.1);
+
+	@media (max-width: $md) {
+		max-width: 167px;
+	}
 }
 
 .calculus--preview__count {
@@ -1125,10 +1160,10 @@
 
 		border: 1px dashed #999;
 
-		background-glass: #ddd;
+		background-color: #ddd;
 
 		&:hover {
-			background-glass: #fef668;
+			background-color: #fef668;
 		}
 	}
 
@@ -1176,7 +1211,7 @@
 
 		min-height: 180px;
 
-		padding: 25px 0 10px;
+		padding: 15px 0 10px;
 	}
 
 	@media (max-width: $md) {
@@ -1298,7 +1333,6 @@
 
 	@media (max-width: $md) {
 		width: 100vw;
-		margin: 0;
 	}
 }
 
@@ -1386,19 +1420,21 @@ input:disabled {
 }
 
 .contacts-form__wrapper {
-	margin: 0 0 64px;
+	margin: 25px 0 64px;
 
 	@media (max-width: $md) {
 	}
 }
 
 .contacts-form__row {
-	max-width: 714px;
+	max-width: 682px;
 	width: 100%;
 
 	color: #000;
 
 	display: flex;
+
+	margin: -16px;
 
 	@media (max-width: $lg) {
 		flex-wrap: wrap;
@@ -1418,6 +1454,8 @@ input:disabled {
 }
 
 .contacts-form__left, .contacts-form__right {
+	padding: 16px;
+
 	flex: 0 0 50%;
 
 	@media (max-width: $lg) {
@@ -1521,6 +1559,8 @@ input:disabled {
 	font-size: 11px;
 	font-weight: 400;
 	
+	max-width: 312px;
+
 	text-align: center;
 
 	@media (max-width: $lg) {
@@ -1528,7 +1568,14 @@ input:disabled {
 
 		flex: 0 0 100%;
 
-		margin: 10px 0 0;
+		margin: 10px auto 15px;
+	}
+}
+
+.calculus__dots {
+
+	@media (max-width: $md) {
+		padding: 0 0 0 16px;
 	}
 }
 
@@ -1541,16 +1588,18 @@ input:disabled {
 	
 	text-align: center;
 
+	padding: 20px 0 0;
+
 	@media (max-width: $md) {
 		display: block;
 	}
 }
 
 .holder-border {
-	padding: 4.5px 16px;
+	padding: 4px 8px;
 
 	@media (max-width: $md) {
-		padding: 16px 4px;
+		padding: 6px 4px 10px;
 	}
 
 	&_active {
